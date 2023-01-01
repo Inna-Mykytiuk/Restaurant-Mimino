@@ -1,0 +1,152 @@
+.amenities-container {
+  @include desktop {
+    padding-right: 199px;
+  }
+}
+
+.amenities {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $background-light-lemon;
+
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 48px;
+  }
+  &__title {
+    font-family: $times-font;
+    @include font(32px, 1.16, 400, null);
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 16px;
+  }
+  &__description {
+    @include font(16px, 1.25, 700, 0.02em);
+    color: $menu-text-color;
+    margin-bottom: 32px;
+
+    @include tablet {
+      width: 757px;
+    }
+  }
+  &__btn {
+    min-width: 384px;
+    height: 64px;
+    @include font(20px, 1.2, 500, null);
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    background: $black;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: background-color $main-transition-duration linear,
+      color $main-transition-duration linear;
+    transition-timing-function: $main-transtition-timing-function;
+
+    @include tablet {
+      font-size: 24px;
+      margin-top: 40px;
+      min-width: 434px;
+    }
+    &:hover,
+    &:focus {
+      color: $black;
+      background-color: $accent-color;
+    }
+  }
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  &__title {
+    font-family: $times-font;
+    @include font(24px, 1.17, 700, null);
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 16px;
+  }
+  &__wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @include font(16px, 1.25, 700, 0.02em);
+    color: $menu-text-color;
+
+    @include tablet {
+      gap: 80px;
+      flex-wrap: nowrap;
+    }
+    @include desktop {
+      gap: 159px;
+    }
+  }
+  &__wrap-extra {
+    @include tablet {
+      gap: 30px;
+    }
+    @include desktop {
+      gap: 64px;
+    }
+  }
+  &__text {
+    @include tablet {
+      width: 400px;
+    }
+  }
+  &__text-extra {
+    @include tablet {
+      width: 450px;
+    }
+    @include desktop {
+      width: 495px;
+    }
+  }
+}
+
+.amenities-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  @include tablet {
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32px;
+  }
+  &__link {
+    @include font(16px, 1.25, 500, 0.02em);
+    color: $brown-text-color;
+    transition: color $main-transition-duration linear;
+    transition-timing-function: $main-transtition-timing-function;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    margin-left: 12px;
+    vertical-align: middle;
+    fill: currentColor;
+    transition: fill $main-transition-duration linear;
+    transition-timing-function: $main-transtition-timing-function;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+}

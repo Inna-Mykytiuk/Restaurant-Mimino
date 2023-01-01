@@ -1,0 +1,203 @@
+.hero {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 181px 15px 20px;
+    height: 740px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/bg@2x.jpg);
+    }
+    @media screen and (min-width: $phone) and (max-width: $tablet) {
+      height: 720px;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/bg-tab.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/bg-tab@2x.jpg);
+      }
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg.jpg);
+      max-width: $desktop;
+      margin: auto;
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/desk-bg@2x.jpg);
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg.jpg);
+      max-width: $desktop;
+      margin: auto;
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/hero/desk-bg@2x.jpg);
+      }
+    }
+    @include tablet {
+      padding-right: 47px;
+      padding-left: 47px;
+      align-items: normal;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      padding: 165px 85px 64px;
+    }
+  }
+  &__box {
+    width: 100%;
+    color: $white;
+  }
+  &__title {
+    font-family: 'FilmP3', sans-serif;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    width: 303px;
+    margin: auto;
+    // text-align: center;
+    @include tablet {
+      font-size: 128px;
+      line-height: 1.08;
+      width: 404px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 24px;
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  &__description {
+    font-family: 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 112px;
+    @include tablet {
+      font-size: 36px;
+      line-height: 1.14;
+    }
+  }
+  &__contacts {
+    align-self: start;
+    margin-top: auto;
+    & .social-list {
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+}
+.button-box {
+  @include tablet {
+    display: flex;
+  }
+  & .btn:first-child {
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+  & .btn {
+    display: block;
+  }
+  @include tablet {
+    order: 1;
+    align-self: center;
+  }
+  @include desktop {
+    align-self: flex-end;
+  }
+}
+.address-box {
+  position: absolute;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  top: 64px;
+  right: 15px;
+  @media screen and (max-width: 365px) {
+    top: 120px;
+  }
+  @include tablet {
+    position: inherit;
+    margin-bottom: 20px;
+    width: 285px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 9px 6px 9px 0;
+    color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-align: left;
+    @include tablet {
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  &__icon {
+    color: $accent-color;
+    margin-right: 8px;
+
+    @include tablet {
+      width: 26px;
+      height: 26px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

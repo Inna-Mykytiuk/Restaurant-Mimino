@@ -1,0 +1,195 @@
+//----------slider-------------
+.swiper {
+  position: absolute;
+  background: linear-gradient(#000 0%, #0000008c 54.17%, #0000 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+  &__icon {
+    width: 37px;
+    height: 37px;
+    color: $accent-color;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.65);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+//-----Hero------
+.room-hero .hero {
+  &__container {
+    position: relative;
+    display: flex;
+    flex-wrap: inherit;
+    padding: 0 15px 15px;
+    flex-direction: column;
+    height: 740px;
+    text-align: left;
+    justify-content: flex-end;
+    @media screen and (min-width: $phone) and (max-width: $tablet) {
+      height: 720px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      max-width: $desktop;
+      margin: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+      margin: auto;
+    }
+    @include tablet {
+      padding: 0 47px 47px;
+    }
+    @include desktop {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0 85px 55px;
+    }
+  }
+  &__box {
+    color: $white;
+    margin-bottom: 16px;
+    z-index: 2;
+    width: auto;
+    align-self: flex-start;
+    // margin-right: auto;
+    @include tablet {
+      margin-bottom: 24px;
+      align-self: initial;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-transform: inherit;
+    max-width: 325px;
+    margin: 0;
+    @include tablet {
+      font-size: 36px;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+  &__description {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-top: 14px;
+    margin-bottom: 0;
+    text-align: inherit;
+
+    max-width: 325px;
+    @include tablet {
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 1.14;
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+  }
+}
+.room-hero .contact-wraper {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+}
+//---------Location style
+.room-hero .address-box {
+  position: absolute;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.35);
+  top: 64px;
+  right: 15px;
+  margin-bottom: 0;
+  @media screen and (max-width: 365px) {
+    top: 120px;
+  }
+  @include tablet {
+    position: inherit;
+    margin-right: 40px;
+    width: 285px;
+  }
+  @include desktop {
+    display: none;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 9px 6px 9px 0;
+    color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-align: left;
+    @include tablet {
+      font-size: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  &__icon {
+    color: $accent-color;
+    margin-right: 8px;
+
+    @include tablet {
+      width: 26px;
+      height: 26px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+.room-hero .btn {
+  margin: 0 auto;
+
+  @include tablet {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+//-------Media
+.room-hero .social-list {
+  flex-direction: column;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 8px;
+      @include tablet {
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    display: none;
+  }
+}

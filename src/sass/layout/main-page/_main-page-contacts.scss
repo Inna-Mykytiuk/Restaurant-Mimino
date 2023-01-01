@@ -1,0 +1,278 @@
+.contact {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background: $background-light-lemon;
+
+
+  @media screen and (min-width: $tablet) {
+    height: 521px;
+    padding-top: 56px;
+    padding-bottom: 32px;
+    .container {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 56px;
+    padding-bottom: 74px;
+  }
+}
+
+// Заголовок Н3 - Mimino
+// !!! ( Заголовок Н2 "Контакти" - прихований)
+
+.contact__title {
+  margin-bottom: 12px;
+
+  font-family: $film-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1, 075;
+  letter-spacing: 0.3em;
+  color: $contact-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1, 078;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+// Налаштування тексту - "Ресторанно-готельний комплекс"
+.contact__title-name {
+  margin-bottom: 16px;
+
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+
+// Налаштування тексту - "Ресторан", "Готель"
+.contact__text {
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1, 2;
+  letter-spacing: 0.02em;
+  color: $brown-text-color;
+}
+
+// Налаштування блоків у секції
+.contact__item {
+  display: block;
+  align-items: center;
+  align-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $phone) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  > div {
+    display: flex;
+
+    background: $white;
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
+    fill: $brown-text-color;
+
+    > a + a {
+      margin-left: 12px;
+    }
+  }
+}
+
+.contact__list {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+// Окремі налаштування розмірів кожного блоку контактів
+
+.contact__bloc-1 {
+  width: 144px;
+  height: 40px;
+  margin-left: 0px;
+
+  @media screen and (min-width: $phone) {
+    margin-left: 22px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
+
+.contact__bloc-2 {
+  width: 264px;
+  height: 40px;
+
+
+  @media screen and (min-width: $phone) {
+    margin-left: 54px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+  }
+}
+
+.contact__bloc-3 {
+  width: 260px;
+  height: 76px;
+  margin-left: 0px;
+  padding-right: 33px;
+
+  @media screen and (min-width: $phone) {
+    margin-left: 124px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 285px;
+    height: 56px;
+    margin: 0px;
+    padding-right: 0px;
+  }
+}
+
+// Окремі налаштування шрифтів кожного блоку контактів
+
+.contact__bloc-text {
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  color: $contact-text-color;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+
+.contact__location-text {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 0px;
+  }
+}
+
+// Налаштування іконок блоку контактів
+
+.contact__icon {
+  margin-left: 8px;
+  margin-top: 9px;
+  margin-right: 8px;
+  margin-bottom: 7px;
+}
+
+.contact__icon-location {
+  margin-left: 10px;
+  margin-top: 26px;
+  margin-right: 10px;
+  margin-bottom: 26px;
+}
+
+// Налаштування зображення мапи
+
+.contact__picture {
+  display: block;
+  min-width: 384px;
+  height: 220px;
+  margin-top: 32px;
+
+  // Зображення-тінь блоку
+  border: $picture-border;
+  box-shadow: $picture-shadow;
+  border-radius: 2px;
+
+  // Зображення-мобільна версія
+  background-image: url(../images/main-page/contacts/map-mob-1x.jpg);
+  text-align: center;
+  background-size: 100%;
+
+
+
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/main-page/contacts/map-mob-2x.jpg);
+  }
+
+  // Зображення-планшетна версія
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    height: 412px;
+    margin-top: 13px;
+    margin-left: 98px;
+
+    background-image: url(../images/main-page/contacts/map-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/contacts/map-tab-2x.jpg);
+    }
+  }
+
+  // Зображення-десктопна версія
+  @media screen and (min-width: $desktop) {
+    width: 634px;
+    height: 412px;
+    margin-top: 8px;
+    margin-left: 106px;
+
+    background-image: url(../images/main-page/contacts/map-desk-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/contacts/map-desk-2x.jpg);
+    }
+  }
+}
