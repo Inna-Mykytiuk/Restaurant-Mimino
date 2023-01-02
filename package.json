@@ -2,24 +2,23 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Inna-Mykytiuk.github.io/Restaurant-Mimino",
+  "homepage": "https://inna-mykytiuk.github.io/Restaurant-Mimino",
   "scripts": {
     "start": "parcel src/*.html --open",
     "build": "parcel build src/*.html --public-url /Restaurant-Mimino/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/inna-mykytiuk/Restaurant-Mimino.git"
   },
   "keywords": [],
-  "author": "Inna Mykytiuk",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/inna-mykytiuk/Restaurant-Mimino/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "wow.js": "^1.2.2"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
