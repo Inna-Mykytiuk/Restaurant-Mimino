@@ -2,17 +2,17 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://AlexandrHaiduk.github.io/Mimino-Team-Project",
+  "homepage": "https://Inna-Mykytiuk.github.io/Restaurant-Mimino",
   "scripts": {
     "start": "parcel src/*.html --open",
-    "build": "parcel build src/*.html --public-url /Mimino-Team-Project/"
+    "build": "parcel build src/*.html --public-url /Restaurant-Mimino/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Inna Mykytiuk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
