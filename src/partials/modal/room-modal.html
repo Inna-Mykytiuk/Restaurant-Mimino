@@ -1,6 +1,11 @@
 <div class="backdrop is-hidden" data-modal-room data-modal-room-1>
   <div class="modal-room">
-    <button type="button" class="modal__close-button" data-modal-room-close>
+    <button
+      type="button"
+      class="modal__close-button"
+      name="modal room close button"
+      data-modal-room-close
+    >
       <svg width="24" height="24">
         <use href="/src/images/icons/icons.svg#icon-close"></use>
       </svg>
@@ -9,13 +14,25 @@
       <h2 class="form__title">Забронювати номер</h2>
       <div class="form__container">
         <label class="form__label">
-          <input required type="text" title="Вкажіть своє ім'я" pattern="([a-zA-Zа-яА-Я]+)" placeholder="Ваше ім'я"
-            class="form-room__input" />
+          <input
+            required
+            type="text"
+            title="Вкажіть своє ім'я"
+            pattern="([a-zA-Zа-яА-Я]+)"
+            placeholder="Ваше ім'я"
+            class="form-room__input"
+          />
           На кого забронювати номер?
         </label>
         <label class="form__label">
-          <input required type="tel" title="Номер телефону повинен бути в форматі '+380xxxxxxxxx'"
-            placeholder="+38 (___) ___-__-__" pattern="([+][0-9\+]{12})" class="form-room__input" />
+          <input
+            required
+            type="tel"
+            title="Номер телефону повинен бути в форматі '+380xxxxxxxxx'"
+            placeholder="+38 (___) ___-__-__"
+            pattern="([+][0-9\+]{12})"
+            class="form-room__input"
+          />
           Номер телефону
         </label>
       </div>
@@ -51,7 +68,9 @@
           Дата виїзду
         </label>
       </div>
-      <button type="submit" class="form-button">Оформити бронювання</button>
+      <button type="submit" class="form-button" name="room booking button">
+        Оформити бронювання
+      </button>
     </form>
   </div>
 </div>

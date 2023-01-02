@@ -1,57 +1,65 @@
-<section class="contact">
-  <div class="container">
-    <div
-      class="contact__wrap wow animate__animated wow about__picture animate__animated animate__zoomIn"
-    >
-      <h2 hidden>Контакти</h2>
-      <h3 class="contact__title">MIMIHO</h3>
-      <p class="contact__title-name">Ресторанно-готельний комплекс</p>
-      <ul class="contact__list">
-        <li class="contact__item">
-          <p class="contact__text">Ресторан</p>
-
-          <div class="contact__bloc-1">
-            <a class="contact__bloc-text" href="tel:+380955559533">
-              <svg class="contact__icon" Width="24px" height="24px">
-                <use href="./images/icons/icons.svg#icon-phone"></use>
-              </svg>
-              095 555 95 33
-            </a>
+<section class="contacts">
+  <div class="container contacts-container container--lines">
+    <h2 class="visually-hidden contacts-title">Контакти</h2>
+    <div class="contacts-wrap wow animate__animated animate__fadeIn">
+      <a href="./index.html" class="link logo-link">mimiho</a>
+      <h3 class="contacts__title">Ресторанно-готельний комплекс</h3>
+      <ul class="list contacts-list">
+        <li class="contacts-item">
+          <p class="contacts__text">Ресторан</p>
+          <div class="phone-wrap">
+            <svg class="contact-icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+380955559533" class="link phone-text"
+              >095 555 95 33</a
+            >
           </div>
         </li>
-        <li class="contact__item">
-          <p class="contact__text">Готель</p>
-
-          <div class="contact__bloc-2">
-            <a class="contact__bloc-text" href="tel:+380955559533">
-              <svg class="contact__icon" Width="24px" height="24px">
-                <use href="./images/icons/icons.svg#icon-phone"></use>
-              </svg>
-              066 849 10 89</a
+        <li class="contacts-item">
+          <p class="contacts__text">Готель</p>
+          <div class="phone-wrap">
+            <svg class="contact-icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+380668491089" class="link phone-text"
+              >066 849 10 89</a
             >
-            <a class="contact__bloc-text" href="tel:+380672758540"
+            <a href="tel:+380672758540" class="link phone-text"
               >067 275 85 40</a
             >
           </div>
         </li>
-        <li class="contact__item">
-          <div class="contact__bloc-3">
+
+        <li class="contacts-item">
+          <address class="address">
+            <svg class="address-icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-location"></use>
+            </svg>
+
             <a
-              class="contact__bloc-text contact__location-text"
-              href="tel:+380668491089"
+              href="https://goo.gl/maps/eK5yWUN8zcKs1HsT7"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="address-link link"
             >
-              <svg class="contact__icon-location" width="24px" height="24px">
-                <use href="./images/icons/icons.svg#icon-location"></use>
-              </svg>
               Україна, м. Полтава,<br />
-              вул. Маршала Бірюзова, 15
-            </a>
-          </div>
+              вул. Маршала Бірюзова, 15</a
+            >
+          </address>
         </li>
       </ul>
     </div>
-    <div
-      class="contact__picture wow about__picture animate__animated animate__fadeInRight"
-    ></div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.4930799266463!2d34.52397137619575!3d49.59919397144223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f34ac947%3A0xbb948724f7cf0b61!2z0JPQvtGC0LXQu9GM0L3Qvi3RgNC10YHRgtC-0YDQsNC90L3QuNC5INC60L7QvNC_0LvQtdC60YEgItCc0ZbQvNGW0L3QviI!5e1!3m2!1sru!2sua!4v1670784700195!5m2!1sru!2sua"
+      width="384"
+      height="220"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="location wow animate__animated animate__fadeInRight"
+      title="Mimino-location"
+    >
+    </iframe>
   </div>
 </section>

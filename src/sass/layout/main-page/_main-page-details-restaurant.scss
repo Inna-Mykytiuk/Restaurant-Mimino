@@ -45,10 +45,10 @@ button {
 }
 
 .details-restaurant {
-  max-width: 414px;
+  // max-width: 414px;
   max-height: 735px;
 
-  background-color: $dark-bg-section;
+  // background-color: $dark-bg-section;
   padding-top: 24px;
   padding-bottom: 40px;
 }
@@ -58,7 +58,7 @@ button {
     url(../images/main-page/main-page-details-restaurant/restourant-414.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 414px 735px;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -76,7 +76,7 @@ button {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/main-page-details-restaurant/restourant-1024.webp);
     background-size: contain;
-    background-size: 1024px 620px;
+    // background-size: 1024px 620px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -142,10 +142,10 @@ button {
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
 
-  color: $logo-color-for-dark-bg;
+  color: $white;
 
   width: 127px;
-  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 1024px) {
     font-size: 64px;
@@ -163,7 +163,7 @@ button {
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
 
-  color: $title-color-for-dark-bg;
+  color: $white;
 
   @media screen and (min-width: 1024px) {
     font-size: 24px;
@@ -229,29 +229,29 @@ button {
   }
 }
 
-.btn {
-  min-width: 236px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
+// .btn {
+//   min-width: 236px;
+//   height: 48px;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: calc(20 / 16);
+//   letter-spacing: 0.02em;
+//   color: $accent-color;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  // &:hover,
-  // &:focus {
-  //   background-color: $hover-bgcolor-small-btn;
-  // }
-}
+// &:hover,
+// &:focus {
+//   background-color: $hover-bgcolor-small-btn;
+// }
+// }
 .reserv-table {
   margin-bottom: 16px;
 }

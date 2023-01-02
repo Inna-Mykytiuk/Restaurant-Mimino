@@ -1,173 +1,189 @@
-.about-restaurant {
-    padding-top: 16px;
-    background-color: #FFFDEE;
+.container--lines-light {
+  background-image: linear-gradient(
+    to right,
+    $background-light-lemon 138px,
+    $bg-gradient-color 139px,
+    $background-light-lemon 140px,
+    $background-light-lemon 273px,
+    $bg-gradient-color 274px,
+    $background-light-lemon 275px
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 278px,
+      $bg-gradient-color 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      $bg-gradient-color 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      $bg-gradient-color 746px,
+      $background-light-lemon 747px
+    );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 338px,
+      $bg-gradient-color 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      $bg-gradient-color 640px,
+      $background-light-lemon 641px,
+      $background-light-lemon 941px,
+      $bg-gradient-color 942px,
+      $background-light-lemon 943px
+    );
+  }
 }
 
-.about {
-    
-    justify-content: center;
-    z-index: 0;
+.about-kitchen {
+  background-color: $background-light-lemon;
+  padding-top: 16px;
+  &__text {
+    // margin-top: 12px;
+    /*margin-bottom: 12px;*/
 
-    @media screen and (min-width: 1024px) {
-        & {
-            display: flex;
-            flex-direction: column;
-            
-            justify-content: center;
+    font-family: 'TimesNewRoman';
+    @include font(20, 1.15, 400, null);
+    color: #b4b4b4;
 
+    @include tablet {
+      margin-top: 120px;
+      @include font(32, 1.15, 400, null);
+    }
+  }
+  &__mimino {
+    margin-bottom: 12px;
 
-        }
+    font-family: 'FilmP3';
+    @include font(40, 1.08, 700, 12);
+    color: $contact-text-color;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 24px;
+      width: 202px;
+      @include font(64, 1.08, 700, 19.2);
+    }
+  }
+  &__description {
+    margin-bottom: 28px;
+
+    font-family: 'Montserrat';
+    display: block;
+    width: 258px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $main-text-color;
+
+    @include tablet {
+      width: 439px;
+      @include font(16, 1.22, 700, 0.32);
     }
 
+    @include desktop {
+      width: 512px;
+    }
+  }
+  &__descr {
+    display: block;
+    width: 170px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $brown-text-color;
 
-
-    &__header {
-        font-family: $times-font;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.15;
-        color: #B4B4B4;
-       
-
-
-        @media screen and (min-width: 1024px) {
-            & {
-                font-size: 32px;
-                line-height: 1.15;
-                margin-top: 104px;
-
-            }
-        }
-
-
+    @include tablet {
+      width: 312px;
+      margin-right: 220px;
+      margin-top: -110px;
+      @include font(16, 1.22, 600, 0.32);
     }
 
-    &__logo {
-        font-family: $film-font;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 1.07;
-        letter-spacing: 0.3em;
-        color: #494848;
-        margin-top: 12px;
-
-
-        @media screen and (min-width: 1024px) {
-            & {
-                font-size: 64px;
-                margin-top: 4px;
-
-            }
-        }
-
-
+    @include desktop {
+      width: 312px;
+      margin-right: 306px;
+      margin-top: -200px;
     }
-
-
-    &__title {
-
-        font-family: $montserrat-font;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
-        color: #5F5F5F;
-        max-width: 258px;
-        margin-top: 12px;
-
-        @media screen and (min-width: 1024px) {
-            & {
-                font-size: 16px;
-                max-width: 439px;
-                margin-top: 24px;
-
-            }
-        }
-
-        @media screen and (min-width: 1280px) {
-            & {
-                max-width: 518px;
-            }
-        }
-
-
-        &--gold {
-            font-family:$montserrat-font;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 1.25;
-            letter-spacing: 0.02em;
-            color: #C79002;
-            max-width: 163px;
-            margin-left: 20px;
-            margin-top: 102px;
-
-            @media screen and (min-width: 1024px) {
-                & {
-                    font-size: 16px;
-                    max-width: 312px;
-                    margin-top: 164px;
-                    margin-left: 48px;
-
-                }
-            }
-
-            @media screen and (min-width: 1280px) {
-                & {
-                    margin-top: 121px;
-                    margin-left: 32px;
-                }
-            }
-        }
-    }
-
-}
-
-
-.about__image {
-    margin-top: 28px;
-    margin-left: 140px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-
-    @media screen and (min-width: 1024px) {
-        & {
-            z-index: 1;
-
-            margin-left: 465px;
-            margin-top: -366px;
-        }
-    }
-
-    @media screen and (min-width: 1280px) {
-        & {
-            margin-left: 555px;
-            margin-top: -346px;
-        }
-    }
-
-
-    &--second {
-        margin-top: 32px;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-
-        @media screen and (min-width: 1024px) {
-            & {
-                margin-top: -16px;
-            }
-        }
-
-        @media screen and (min-width: 1280px) {
-            & {
-                margin-top: -65px;
-            }
-        }
-    }
-}
-
-.thumb {
+  }
+  &__cover {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrap {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__picture {
+    box-shadow: $picture-shadow;
+  }
+}
+
+.kitchen-image__kuchina {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-top: -32px;
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
+
+  @include desktop {
+    margin-right: 95px;
+    margin-bottom: 0;
+  }
+}
+
+.meat-image__thumb {
+  margin-bottom: 32px;
+  box-shadow: $picture-shadow;
+
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: -15px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+    margin-top: -80px;
+  }
+}
+
+.about-kitchen start__slider {
+  height: 377px;
+
+  @include tablet {
+    margin-left: 465px;
+    margin-top: -139px;
+
+    height: 400px;
+    width: 512px;
+  }
+
+  @include desktop {
+    margin-left: 555px;
+    margin-top: -225px;
+
+    height: 400px;
+    width: 640px;
+  }
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

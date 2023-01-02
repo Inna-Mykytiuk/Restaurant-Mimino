@@ -3,8 +3,8 @@ const swiper = new Swiper('.swiper-mini', {
   spaceBetween: 25,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-prev-mini',
-    prevEl: '.swiper-button-next-mini',
+    nextEl: '.swiper-button-next-mini',
+    prevEl: '.swiper-button-prev-mini',
   },
 
   breakpoints: {

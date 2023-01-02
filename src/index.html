@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Restaurant and hotel complex. Rest. Eat. Food. Book."
+    />
     <title>Mimino</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <link
@@ -19,8 +23,10 @@
 
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/main-page/main-page-header.html"></include>
+    <include src="./partials/header.html"></include>
     <main>
+      <include src="./partials/custom-elements/custom-elements.html"></include>
+
       <include src="./partials/main-page/main-page-hero.html"></include>
 
       <include
@@ -36,7 +42,7 @@
       <include src="./partials/main-page/main-page-contacts.html"></include>
     </main>
 
-    <include src="./partials/main-page/main-page-footer.html"></include>
+    <include src="./partials/footer.html"></include>
     <include src="./partials/modal/table-modal.html"></include>
     <include src="./partials/modal/room-modal.html"></include>
 
@@ -45,6 +51,8 @@
     <script type="module" src="./js/modal-table.js"></script>
     <script type="module" src="./js/modal-room.js"></script>
     <script type="module" src="./js/slider-mini-mod.js"></script>
+    <script type="module" src="./js/custom-elements.js"></script>
+    <script type="module" src="./js/animated-favicon.js"></script>
 
     <!-- animation on scroll script -->
     <script src="./js/wow.min.js"></script>
@@ -53,5 +61,24 @@
     </script>
 
     <!-- animation on scroll script -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin=""
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"
+      integrity="sha512-yJ3vm1HmQtcgeMtbUYCp7PuTLyjU+ffCnVNTuE1Uccv1BmkoaJIXt1EjBVGnscjCILc62hTJJJ2rJJBTcw8RjQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

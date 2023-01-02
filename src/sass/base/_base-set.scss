@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $montserrat-font;
 }
@@ -21,6 +24,28 @@ img {
   height: auto;
 }
 
+table,
+tbody,
+caption,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
 .container {
   max-width: 414px;
   margin: 0 auto;
@@ -35,5 +60,42 @@ img {
     max-width: 1280px;
 
     padding: 0 85px;
+  }
+  &--relative {
+    position: relative;
+  }
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  min-width: 236px;
+  padding: 12px 22px;
+  background: $black;
+  border: 2px solid $white;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+
+  &--hero {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  transition: background-color 250ms $main-transtition-timing-function,
+    border 250ms $main-transtition-timing-function,
+    color 250ms $main-transtition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 2px solid $accent-color;
+  }
+
+  &:active {
+    border-color: $white;
   }
 }
